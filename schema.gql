@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type RecordType {
+  name: String!
+}
+
+type Query {
+  test(recordDto: RecordTypeDto!, name: String!): RecordType!
+}
+
+input RecordTypeDto {
+  name: String!
+}
+
+type Mutation {
+  createRecord(recordDto: RecordTypeDto!): RecordType!
+}
